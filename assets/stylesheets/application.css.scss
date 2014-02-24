@@ -1,0 +1,82 @@
+@import "bourbon";
+@import "grater";
+@import "globals/variables";
+@import "components/reset";
+
+/* General */
+
+html, body {
+  @include prefixer(font-smoothing, antialiased, webkit moz spec);
+}
+
+header {
+  margin: 0 auto;
+  background: $red-color;
+  padding: 100px 0;
+}
+
+body, input, button {
+  color: #444;
+  font-family: 'Gotham SSm A', 'Gotham SSm B';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+
+a {
+  color: #0881b3;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+a:hover {
+  @include transition(border 0.3s ease-in-out);
+  border-bottom: 1px solid;
+}
+
+p {
+  margin: 0 0 1em;
+  line-height: 1.4em;
+}
+
+p.small {
+  font-size: 0.8em;
+}
+
+h1 {
+  display: none;
+}
+
+body > header img {
+  width: 400px;
+  height: 120px;
+  margin: 0 auto;
+  display: block;
+
+  @media #{$grater-small-media-query} {
+    width: 280px;
+    height: 84px;
+  }
+}
+
+h2 {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+@import "components/form";
+
+footer {
+  text-align: center;
+  font-size: 14px;
+  color: #999;
+  padding-bottom: 30px;
+}
+
+footer a {
+  color: #999;
+}
+
+@import "pages/*";

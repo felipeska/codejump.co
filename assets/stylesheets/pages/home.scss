@@ -1,0 +1,216 @@
+a.app-store {
+  width: 175px;
+  height: 50px;
+
+  img {
+    width: 175px;
+    height: 50px;
+  }
+
+  &:hover {
+    border: 0;
+  }
+}
+
+section {
+  @include box-sizing(border-box);
+  padding: 40px 20px;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  div.grater > div {
+    margin-bottom: 0;
+    position: relative;
+
+    &:last-child {
+      width: 256px;
+      height: 256px;
+    }
+  }
+
+  a.app-icon {
+    @include hide-text;
+    width: 256px;
+    height: 256px;
+    display: block;
+    background: no-repeat;
+    background-size: 256px 256px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -128px 0 0 -128px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    &:hover {
+      border-color: transparent;
+    }
+  }
+
+  @media #{$grater-small-media-query} {
+    padding: 40px 10px;
+
+    div.grater {
+      text-align: center;
+
+      > div {
+        height: auto !important;
+      }
+
+      > div:first-child {
+        margin-bottom: 3em;
+      }
+    }
+
+    a.app-icon {
+      position: relative;
+      top: 0;
+      left: 0;
+      margin: 0 auto;
+    }
+  }
+}
+
+
+// About
+section#about {
+  background: $about-color;
+  color: #fff;
+}
+
+
+// Cheddar
+section#cheddar {
+  background: #0881b3;
+  color: #fff;
+
+  a {
+    color: #fff;
+  }
+
+  a.title {
+    display: block;
+    width: 269px;
+    height: 44px;
+    margin: 0 auto 1em;
+
+    &:hover {
+      border-bottom-color: transparent;
+    }
+
+    img {
+      width: 269px;
+      height: 44px;
+    }
+  }
+
+  p:last-child {
+    text-align: center;
+    margin: 2em auto 0;
+  }
+}
+
+
+// Shares
+section#shares {
+  background: $shares-green-color;
+  color: #fff;
+
+  a {
+    color: #fff;
+  }
+
+  p:last-child {
+    text-align: center;
+    margin: 2em auto 0;
+  }
+
+  @media #{$grater-small-media-query} {
+    text-align: center;
+  }
+}
+
+
+// Roon
+section#roon {
+  background: #f9fbfc;
+  color: #909396;
+
+  em {
+    background-color: #fdffb6;
+    padding: 2px;
+    box-shadow: #fdffb6 0 0 5px;
+    color: #21272d;
+  }
+
+  a.title {
+    display: block;
+    width: 269px;
+    height: 44px;
+    margin: 0 auto 1em;
+
+    &:hover {
+      border-bottom-color: transparent;
+    }
+
+    img {
+      width: 269px;
+      height: 44px;
+    }
+  }
+
+  a.app-icon {
+    box-shadow: 0 0 4px rgba(144, 147, 150, 0.8);
+    border-radius: 43px;
+    overflow: hidden;
+  }
+
+  p:last-child {
+    text-align: center;
+    margin: 2em auto 0;
+  }
+}
+
+
+// Team
+section#team {
+  background: #f7e47c;
+  color: #4c4e53;
+
+  a {
+    color: #bba633;
+  }
+
+  a.headshot {
+    display: block;
+    text-align: center;
+    width: 190px;
+    margin: 0 auto;
+
+    &:hover {
+      border-bottom: 1px transparent solid;
+    }
+
+    img {
+      width: 190px;
+      height: 190px;
+      display: block;
+      background: asset-url("soffes.png") no-repeat;
+      background-size: 190px 190px;
+      margin: 0 auto 1em;
+
+      @include hidpi {
+        background-image: asset-url("soffes@2x.png");
+      }
+    }
+
+    span.name {
+      display: block;
+    }
+  }
+}
