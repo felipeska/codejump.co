@@ -8,7 +8,7 @@ Simply run the commands below. You'll need Ruby 1.9.3 or higher and Bundler inst
 
 ```
 $ git clone https://github.com/felipeska/codejump.co.git
-$ cd nothingmagical.com
+$ cd codejumnp.com
 $ bundle install
 $ bundle exec shotgun
 ```
