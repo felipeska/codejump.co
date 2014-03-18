@@ -300,11 +300,11 @@ margin: 0 auto; }
 													@media (max-width: 768px) {
 
 														.header {
-															background: url(../assets/bg.jpg) no-repeat center center scroll;
+															background: url(../assets/bg.png) no-repeat center center scroll;
 														}
 
 														.callout {
-															background: url(../assets/callout.jpg) no-repeat center center scroll;
+															background: url(../assets/callout.png) no-repeat center center scroll;
 														}
 
 														.map {
