@@ -167,7 +167,7 @@ color: #CABF42;
 	margin-top: 20px;
   margin-bottom: 20px;
   border: 0;
-  border-top: 1px solid #000000;
+  border-top: 1px solid #333;
 }
 
 .grater-container {
@@ -223,7 +223,7 @@ margin: 0 auto; }
 													/* Callout */
 
 													.callout {
-														color: #000000;
+														color: #333;
 														display: table;
 														height: 400px;
 														width: 100%;
