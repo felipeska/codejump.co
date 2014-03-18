@@ -146,6 +146,7 @@ a.headshot {
 text-align: center;
 width: 190px;
 margin: 0 auto;
+text-decoration: none;
 border-bottom: 1px transparent solid;
 }
 
@@ -156,11 +157,14 @@ display: block;
 background: asset-url("soffes.png") no-repeat;
 background-size: 190px 190px;
 margin: 0 auto 1em;
+text-decoration: none;
 }
 
 span.name {
 display: block;
-color: #CABF42;
+color: #ffffff;
+border:0;
+text-decoration: none;
 }
 
 .divider{
