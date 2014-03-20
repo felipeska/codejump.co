@@ -11,6 +11,8 @@ body {
 	display: table-cell;
 	vertical-align: middle;
 	text-align: center;
+	background-color: rgba(0,0,0,.3);
+	color: #ffffff;
 
 }
 
@@ -136,7 +138,7 @@ body {
 .services {
 	background: #6aac0a;
 	padding: 50px 0;
-	color: #fcfbe3;
+	color: #fff;
 }
 
 .lead{
@@ -158,6 +160,7 @@ body {
 	background-color: rgba(0,0,0,.3);
 	color: #ffffff;
 }
+
 
 a.headshot {
 
