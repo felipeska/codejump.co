@@ -16,11 +16,79 @@ body {
 
 }
 
+.vert-text-header {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	background-color: rgba(0,0,0,.3);
+	background: url(../assets/game.png) no-repeat right;
+	color: #ffffff;
+
+}
+
+.vert-text-medium {
+	vertical-align: middle;
+	margin-top: 80px;
+	color: #6aac0a;
+}
+
+.vert-text-medium h1 {
+	padding: 0;
+	margin: 0;
+	font-size: 3.8em;
+	font-weight: 700;
+}
+
 .vert-text h1 {
 	padding: 0;
 	margin: 0;
 	font-size: 4.5em;
 	font-weight: 700;
+}
+
+.Roboto-normal-300 {
+	font-family: 'Roboto' !important;
+	font-style: normal;
+	font-weight: 300;
+}
+
+.Roboto-italic-800 {
+	font-family: 'Roboto' !important;
+	font-style: italic;
+	font-size: 3.8em;
+	font-weight: 100;
+}
+
+.Roboto-italic-700 {
+	font-family: 'Roboto' !important;
+	font-style: italic;
+	font-size: 3.5em;
+	font-weight: 700;
+}
+
+.Roboto-italic-100 {
+	font-family: 'Roboto' !important;
+	font-style: italic;
+	font-weight: 100;
+}
+
+.inputbox{
+	width: 100%;
+	border: none;
+	padding: 0.8em 1em;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 1.375em;
+	color:#598700;
+	background-size: 100% 100%;
+	background-color: rgba(255, 255, 255, 1.0);
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+	resize: none;
 }
 
 /* Side Menu */
@@ -115,7 +183,7 @@ body {
 	height: 100%;
 	width: 100%;
 	position: relative;
-	background: url(../assets/bg.png) no-repeat center center fixed;
+	background: url(../assets/header_home.png) no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -142,7 +210,7 @@ body {
 }
 
 .lead{
-	padding: 10px 0;
+	padding: 10px;
 	background-color: rgba(0,0,0,.3);
 	color: #ffffff;
 	margin-top:-10px;
@@ -324,7 +392,7 @@ span.name {
 														@media (max-width: 768px) {
 
 															.header {
-																background: url(../assets/bg.png) no-repeat center center scroll;
+																background: url(../assets/header_home.png) no-repeat center center scroll;
 															}
 
 															.callout {
